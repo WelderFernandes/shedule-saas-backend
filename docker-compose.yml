@@ -1,0 +1,11 @@
+version: '3.7'
+
+services:
+  pg-saas:
+    image: bitnami/postgresql
+    environment:
+      - POSTGRESQL_USERNAME=docker
+      - POSTGRESQL_PASSWORD=docker
+      - POSTGRESQL_DATABASE=shedule-saas
+    ports:
+      - '5432:5432'
